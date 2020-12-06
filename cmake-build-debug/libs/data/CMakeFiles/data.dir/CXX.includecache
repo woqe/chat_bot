@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/sddvxd/CLionProjects/telegram-framework/telegram_framework-master/libs/data/Item.cpp
+Item.h
+C:/Users/sddvxd/CLionProjects/telegram-framework/telegram_framework-master/libs/data/Item.h
+
+C:/Users/sddvxd/CLionProjects/telegram-framework/telegram_framework-master/libs/data/Item.h
+iostream
+-
+vector
+-
+fstream
+-
+math.h
+-
+

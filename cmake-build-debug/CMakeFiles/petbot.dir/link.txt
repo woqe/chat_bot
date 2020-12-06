@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2020.2.3\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\petbot.dir/objects.a
+C:\mingw64\bin\ar.exe cr CMakeFiles\petbot.dir/objects.a @CMakeFiles\petbot.dir\objects1.rsp
+C:\mingw64\bin\g++.exe -m32 -g   -Wl,--whole-archive CMakeFiles\petbot.dir/objects.a -Wl,--no-whole-archive  -o petbot.exe -Wl,--out-implib,libpetbot.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\petbot.dir\linklibs.rsp

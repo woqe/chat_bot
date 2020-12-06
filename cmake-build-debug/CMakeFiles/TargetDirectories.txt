@@ -1,0 +1,9 @@
+C:/Users/sddvxd/CLionProjects/telegram-framework/telegram_framework-master/cmake-build-debug/CMakeFiles/petbot.dir
+C:/Users/sddvxd/CLionProjects/telegram-framework/telegram_framework-master/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/sddvxd/CLionProjects/telegram-framework/telegram_framework-master/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/sddvxd/CLionProjects/telegram-framework/telegram_framework-master/cmake-build-debug/libs/botapi/CMakeFiles/botapi.dir
+C:/Users/sddvxd/CLionProjects/telegram-framework/telegram_framework-master/cmake-build-debug/libs/botapi/CMakeFiles/edit_cache.dir
+C:/Users/sddvxd/CLionProjects/telegram-framework/telegram_framework-master/cmake-build-debug/libs/botapi/CMakeFiles/rebuild_cache.dir
+C:/Users/sddvxd/CLionProjects/telegram-framework/telegram_framework-master/cmake-build-debug/libs/data/CMakeFiles/rebuild_cache.dir
+C:/Users/sddvxd/CLionProjects/telegram-framework/telegram_framework-master/cmake-build-debug/libs/data/CMakeFiles/data.dir
+C:/Users/sddvxd/CLionProjects/telegram-framework/telegram_framework-master/cmake-build-debug/libs/data/CMakeFiles/edit_cache.dir

@@ -1,0 +1,2 @@
+C:\mingw64\bin\ar.exe qc libdata.a  CMakeFiles/data.dir/Item.cpp.obj
+C:\mingw64\bin\ranlib.exe libdata.a
