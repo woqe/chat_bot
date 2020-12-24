@@ -605,6 +605,10 @@ public:
 //        } while (received_now == 16384);
 //        buffer[received] = 0;
         string buff(recv_buffer);
+        if(!buff.size())
+            refresh();
+        cout << "*** Query:\n" << sendBytes << "*** Answer:\n" << buff << endl;
+
         delete[] recv_buffer;
         return HTTPResponse(buff);
     }
@@ -643,9 +647,8 @@ public:
         }else
             query += "\r\n";
 
-        cout << "\nQuery: " << query << "\n";
         HTTPResponse answer = httpsSocket.query(query);
-        cout << "Answer: " << answer.getText() << endl;
+
         if(answer.findBody().size()){
             try {
                 json janswer = answer.toJSON();

@@ -4,6 +4,76 @@
 
 #include "interface.h"
 
+vector<int> Table::getSortedByIncrease(const string &name, TYPE type){
+    vector<int> sorted_IDs;
+    while(sorted_IDs.size() != rows_vec.size()){
+        int lowest_id = -1;
+        for(auto it = rows_vec.begin(); it != rows_vec.end(); ++it){
+            if(find(sorted_IDs.begin(), sorted_IDs.end(), *it) != sorted_IDs.end())
+                continue;
+            switch(type){
+                case TYPE::LONG:{
+                    if(readLong(*it, name) <= readLong(lowest_id, name))
+                        lowest_id = *it;
+                    break;
+                }
+                case TYPE::INT:{
+                    if(readInt(*it, name) <= readInt(lowest_id, name))
+                        lowest_id = *it;
+                    break;
+                }
+                case TYPE::STRING:{
+                    if(readString(*it, name) <= readString(lowest_id, name))
+                        lowest_id = *it;
+                    break;
+                }
+                case TYPE::DOUBLE:{
+                    if(readDouble(*it, name) <= readDouble(lowest_id, name))
+                        lowest_id = *it;
+                    break;
+                }
+            }
+        }
+        sorted_IDs.push_back(lowest_id);
+    }
+    return sorted_IDs;
+}
+
+vector<int> Table::getSortedByDecrease(const string &name, TYPE type){
+    vector<int> sorted_IDs;
+    while(sorted_IDs.size() != rows_vec.size()){
+        int highed_id = -1;
+        for(auto it = rows_vec.begin(); it != rows_vec.end(); ++it){
+            if(find(sorted_IDs.begin(), sorted_IDs.end(), *it) != sorted_IDs.end())
+                continue;
+            switch(type){
+                case TYPE::LONG:{
+                    if(readLong(*it, name) >= readLong(highed_id, name))
+                        highed_id = *it;
+                    break;
+                }
+                case TYPE::INT:{
+                    if(readInt(*it, name) >= readInt(highed_id, name))
+                        highed_id = *it;
+                    break;
+                }
+                case TYPE::STRING:{
+                    if(readString(*it, name) >= readString(highed_id, name))
+                        highed_id = *it;
+                    break;
+                }
+                case TYPE::DOUBLE:{
+                    if(readDouble(*it, name) >= readDouble(highed_id, name))
+                        highed_id = *it;
+                    break;
+                }
+            }
+        }
+        sorted_IDs.push_back(highed_id);
+    }
+    return sorted_IDs;
+}
+
 int Table::addCol(const string &name, TYPE type) {
     for(auto it = type_map.begin(); it != type_map.end(); ++it){
         if(name == it->first)
